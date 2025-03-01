@@ -3,6 +3,7 @@ import classNames from "./Table";
 import "./Table.css";
 import { getTests, getSites } from "../api/api";
 import { useNavigate } from "react-router-dom";
+
 interface Test {
     id: number;
     name: string;

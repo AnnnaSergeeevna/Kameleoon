@@ -1,4 +1,6 @@
-.dash {
+.dash,
+.res,
+.fin {
     font-family: Montserrat;
     font-weight: 700;
     font-size: 26px;
@@ -144,4 +146,13 @@ tr {
 
 tr:hover {
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+}
+
+.additText {
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(34, 34, 34, 1);
+    line-height: 17.07px;
+    letter-spacing: 0%;
 }

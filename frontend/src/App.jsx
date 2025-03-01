@@ -1,20 +1,9 @@
 import React from "react";
 import "./App.css";
-
-import { Routes, Route, useParams } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Table from "./pages/Table";
-
-const Dashboard = () => <Table />;
-
-const Results = () => {
-  const { testId } = useParams();
-  return <h2>Results Page for Test ID: {testId}</h2>;
-};
-
-const Finalize = () => {
-  const { testId } = useParams();
-  return <h2>Finalize Page for Test ID: {testId}</h2>;
-};
+import Results from "./pages/Results";
+import Finalize from "./pages/Finalize";
 
 function App() {
   return (
