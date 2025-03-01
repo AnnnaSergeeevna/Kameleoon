@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getTests } from "../api/api";
+import arrowBack from "./arrowBack.svg";
 
 interface Test {
     id: number;
@@ -12,6 +13,7 @@ interface Test {
 
 const Finalize = () => {
     const { testId } = useParams();
+    const navigate = useNavigate();
     const [test, setTest] = useState<Test | null>(null);
     const [loading, setLoading] = useState(true);
 
@@ -31,6 +33,9 @@ const Finalize = () => {
             <h2 className="res">Results for "{test.name}"</h2>
             <h4 className="additText">Type: {test.type}</h4>
             <h4 className="additText">Status: {test.status}</h4>
+            <button className="backButton" onClick={() => navigate("/")}>
+                <img src={arrowBack} alt="Back" className="backIcon" /> Back
+            </button>
         </div>
     );
 };
