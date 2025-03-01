@@ -1,0 +1,147 @@
+.dash {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31.69px;
+    letter-spacing: 0%;
+    color: rgba(34, 34, 34, 1);
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.searchInpt {
+    background-color: white;
+    background-image: url('./Search.svg');
+    background-position: left 13px center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    padding-left: 37px;
+    width: 914px;
+    height: 45px;
+    border-radius: 15px;
+    border: 1px solid rgba(235, 235, 235, 1);
+    font-family: Roboto;
+    color: rgba(71, 71, 71, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16.41px;
+    letter-spacing: 0px;
+}
+
+.table-cont {
+    width: 954px;
+    gap: 30px;
+}
+
+.btn {
+    width: 95px;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* Стиль для кнопки "Results" */
+.btn-results {
+    background-color: rgba(46, 229, 172, 1);
+    color: #ffffff;
+}
+
+.btn-results:hover {
+    background-color: rgb(43, 213, 159);
+}
+
+/* Стиль для кнопки "Finalize" */
+.btn-finalize {
+    background-color: rgba(125, 125, 125, 1);
+    color: #ffffff;
+}
+
+.btn-finalize:hover {
+    background-color: rgba(100, 100, 100, 1);
+}
+
+.btn:focus {
+    border: none;
+    outline: none;
+}
+
+.btn:active {
+    border: none;
+    outline: none;
+}
+
+.site-indicator {
+    width: 4px;
+    height: 70px;
+    border-radius: 3px 0 0 3px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+td {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+td:first-child {
+    text-align: left;
+}
+
+td.table-row {
+    position: relative;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.site-market {
+    background: rgba(225, 65, 101, 1);
+}
+
+.site-games {
+    background: rgba(134, 134, 255, 1);
+}
+
+.site-delivery {
+    background: rgba(194, 194, 255, 1);
+}
+
+.site-default {
+    background: rgba(200, 200, 200, 1);
+}
+
+table {
+    width: 954px;
+    border-radius: 3px;
+    border-collapse: separate;
+    background-color: rgb(249, 249, 249);
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15.23px;
+    letter-spacing: 0%;
+    color: rgba(92, 92, 92, 1);
+    gap: 30px;
+    border-spacing: 0 5px;
+}
+
+th {
+    cursor: pointer;
+    background-color: rgb(249, 249, 249);
+    padding: 10px;
+    text-align: left;
+}
+
+tr {
+    height: 70px;
+    background-color: #ffffff;
+    border-radius: 3px;
+}
+
+tr:hover {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
+}
