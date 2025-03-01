@@ -85,7 +85,7 @@ const Table = () => {
                 ) : (
                     <table>
                         <thead>
-                            <tr>
+                            <tr className="tableHead">
                                 {(["name", "type", "status", "site"] as const).map((col) => (
                                     <th
                                         key={col}
@@ -97,7 +97,7 @@ const Table = () => {
                                         {col.toUpperCase()} {sortColumn === col ? (sortOrder === "asc" ? "▲" : "▼") : ""}
                                     </th>
                                 ))}
-                                <th>ACTION</th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>

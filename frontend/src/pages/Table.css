@@ -8,7 +8,8 @@
     letter-spacing: 0%;
     color: rgba(34, 34, 34, 1);
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 41px;
+    margin-left: 48px;
 }
 
 .searchInpt {
@@ -30,11 +31,6 @@
     letter-spacing: 0px;
 }
 
-.table-cont {
-    width: 954px;
-    gap: 30px;
-}
-
 .btn {
     width: 95px;
     height: 30px;
@@ -44,7 +40,6 @@
     outline: none;
 }
 
-/* Стиль для кнопки "Results" */
 .btn-results {
     background-color: rgba(46, 229, 172, 1);
     color: #ffffff;
@@ -54,7 +49,6 @@
     background-color: rgb(43, 213, 159);
 }
 
-/* Стиль для кнопки "Finalize" */
 .btn-finalize {
     background-color: rgba(125, 125, 125, 1);
     color: #ffffff;
@@ -83,23 +77,6 @@
     top: 0;
 }
 
-td {
-    padding: 15px;
-    background-color: #ffffff;
-    border-radius: 3px;
-}
-
-td:first-child {
-    text-align: left;
-}
-
-td.table-row {
-    position: relative;
-    padding-left: 10px;
-    display: flex;
-    align-items: center;
-}
-
 .site-market {
     background: rgba(225, 65, 101, 1);
 }
@@ -116,8 +93,15 @@ td.table-row {
     background: rgba(200, 200, 200, 1);
 }
 
+.table-cont {
+    width: 1054px;
+    gap: 30px;
+}
+
 table {
     width: 954px;
+    margin-left: 48px;
+    margin-right: 52px;
     border-radius: 3px;
     border-collapse: separate;
     background-color: rgb(249, 249, 249);
@@ -131,11 +115,27 @@ table {
     border-spacing: 0 5px;
 }
 
+td {
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    text-align: start;
+}
+
+
+td.table-row {
+    position: relative;
+    padding-left: 11px;
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
 th {
     cursor: pointer;
     background-color: rgb(249, 249, 249);
-    padding: 10px;
-    text-align: left;
+    padding: 15px;
+    text-align: start;
 }
 
 tr {
@@ -144,15 +144,29 @@ tr {
     border-radius: 3px;
 }
 
-tr:hover {
+th.table-row tr:hover {
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.15);
 }
 
+.tableHead:hover {
+    box-shadow: none;
+}
+
+.actionPage {
+    justify-content: start;
+    align-items: start;
+    height: 800px;
+    width: 1054px;
+}
+
 .additText {
-    font-family: Montserrat;
     font-weight: 600;
     font-size: 14px;
     color: rgba(34, 34, 34, 1);
     line-height: 17.07px;
     letter-spacing: 0%;
+    text-align: left;
+    margin-left: 48px;
+    justify-content: start;
+    align-items: start;
 }

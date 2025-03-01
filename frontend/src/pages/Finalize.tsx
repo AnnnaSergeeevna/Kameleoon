@@ -27,10 +27,10 @@ const Finalize = () => {
     if (!test) return <p>Test not found</p>;
 
     return (
-        <div>
+        <div className="actionPage">
             <h2 className="res">Results for "{test.name}"</h2>
-            <p className="additText">Type: {test.type}</p>
-            <p className="additText">Status: {test.status}</p>
+            <h4 className="additText">Type: {test.type}</h4>
+            <h4 className="additText">Status: {test.status}</h4>
         </div>
     );
 };
